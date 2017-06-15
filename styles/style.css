@@ -1,14 +1,40 @@
 html {
   font-size: 15px; /* px 意为“像素（pixels）”: 这个基础字体的尺寸现在是10像素  */
   font-family: 'Roboto', sans-serif;
+  background-color: #00539f;/*背景颜色*/
   
 }
-h1{
+
+h1{/*修改标题的尺寸、外边框第一个值代表元素的上和下第二个值代表左右（auto为水平方向上左右对称也就是居中了）、内边框以上右下左的顺序排列，字体有阴影*/
     font-size: 60px;
-    text-align: center
+    text-align: center;/*文本对齐方式*/ /*center为居中*/
+    margin: 0;/*外边框*/
+    padding: 20px 0;/*内边框*/
+    color: #00539f;
+    text-shadow: 3px 3px 5px black;/*字体阴影*/
 }
+
 p,li{
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
+}
+
+body{
+    width: 600px;
+    margin: 0 auto;
+    background-color: #ff9500;
+    padding: 0 20px 20px 20px;
+    border: 5px  solid black ;/*solid为定义为实线*/
+}
+
+img{
+   margin: 0 auto;/*外边框为水平居中*/
+   display: block;/*使得img显示为块级元素*/
+   /*body是块级元素。意味着它占据了页面的空间且能够赋予外边距和其他改变距离的值。与之对应的是行内元素，则不能。所以为了使图像有外边距，我们必须使用display：block将其改为块级元素。*/
+}
+
+#img{/*块级元素<div>里的id，定义它的文本样式为居中*/
+
+    text-align: center;
 }
